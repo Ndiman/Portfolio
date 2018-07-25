@@ -1,0 +1,63 @@
+﻿#reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #ex2output1, #ex3output1, #ex4output1 {
+    color: black;
+}
+
+#scroll1, #scroll2, #scroll3, #scroll4 {
+    overflow: auto;
+    height: 200px;
+    width: 650px;
+}
+#scroll1 {
+    width: 825px;
+}
+#scroll2 {
+    width: 755px;
+}
+#scroll4 {
+    width: 600px;
+}
+.modal-content {
+    background-color: gainsboro;
+}
+#ex1num1, #ex1num2, #ex1num3, #ex1num4, #ex1num5, #ex2num1, #ex3input1, #ex3input2, #ex4input1 {
+    background-color: gainsboro;
+    color: black;
+}
+.modal {
+    color: black;
+}
+#padding {
+    padding-right: 20px;
+}
+#ex1answer, #ex2answer, #ex3answer {
+    position: relative;
+    right: 100px;
+}
+#ex1answer {
+    line-height: 2.1;
+}
+#ex2answer {
+    right: 125px;
+}
+#ex4answer {
+    position: relative;
+    right: 50px;
+}
+#FizzBuzz {
+    color: indianred;
+}
+#Fizz {
+    color: mediumseagreen
+}
+#Buzz {
+    color: cornflowerblue;
+}
+#myname {
+    font-family: 'Montserrat', sans-seriff;
+}
+#myblurb {
+    font-family: 'Lucida Handwriting';
+}
+#me {
+    padding-top: 100px;
+}

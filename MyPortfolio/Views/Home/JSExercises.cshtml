@@ -1,0 +1,28 @@
+﻿
+@*@{
+    ViewBag.Title = "JSExercises";
+}
+
+<input type="number" />
+
+@section scripts {
+    <script>
+
+        var onlyNum = (event) => {
+            var x = event.keyCode || event.which;
+            if (x < 48 || x > 57) {
+                return false
+            };
+        };
+
+        $('input').on('keypress', onlyNum);
+    </script>
+   }*@
+
+
+@*Slot machine
+generate random array of images or numbers. numbers correspond to image
+my bank account and my bet
+three lemons - bankrupt
+three 7s - jackpot
+--spinning effect -> spin and stop*@

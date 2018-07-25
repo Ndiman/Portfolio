@@ -1,0 +1,863 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NICOLE IMAN</title>
+    <link rel="icon"
+          type="image/x-icon"
+          href="~/creativeagency/img/favicon.ico" />
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="~/creativeagency/css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="~/creativeagency/css/owl.theme.default.css" />
+    <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="~/creativeagency/css/magnific-popup.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="~/creativeagency/css/font-awesome.min.css">
+
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="~/creativeagency/css/style.css" />
+    <link href="~/creativeagency/css/MyStyles.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Header -->
+    <header id="home">
+        <!-- Background Image -->
+        <div class="bg-img" style="background-image: url('../../creativeagency/img/background1.jpg');">
+            <div class="overlay"></div>
+        </div>
+        <!-- /Background Image -->
+        <!-- Nav -->
+        <nav id="nav" class="navbar nav-transparent">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    @*<div class="navbar-brand">
+                            <a href="~/creativeagency/index.html">
+                                <img class="logo" src="~/creativeagency/img/logo.png" alt="logo">
+                                <img class="logo-alt" src="~/creativeagency/img/logo-alt.png" alt="logo">
+                            </a>
+                        </div>*@
+                    <!-- /Logo -->
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
+                <!--  Main navigation  -->
+                <ul class="main-nav nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li data-toggle="modal" data-target="#myModal" id="openmodal">
+                        <a href="#myModal">JS Exercises</a>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /Nav -->
+        <!-- /Main navigation -->
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">Javascript Exercises</h2>
+                        <ul class="nav nav-pills">
+                            <li class="active"><a data-toggle="pill" href="#ex1" id="open1">Math problems</a></li>
+                            <li><a data-toggle="pill" href="#ex2" id="open2">Factorials</a></li>
+                            <li><a data-toggle="pill" href="#ex3" id="open3">Fizz-Buzz</a></li>
+                            <li><a data-toggle="pill" href="#ex4" id="open4">Palindromes</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div id="ex1" class="tab-pane fade in active">
+                                <!-- Exercise 1 -->
+                                <div class="exercise1">
+                                    <div class="panel-group" id="accordion1">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#ex1collapse1">
+                                                        Let's check out some math
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex1collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="container" id="mathex">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">Enter number:</div>
+                                                                    <div class="col-md-3">
+                                                                        <input id="ex1num1" type="number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">Enter number:</div>
+                                                                    <div class="col-md-3">
+                                                                        <input id="ex1num2" type="number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">Enter number:</div>
+                                                                    <div class="col-md-3">
+                                                                        <input id="ex1num3" type="number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">Enter number:</div>
+                                                                    <div class="col-md-3">
+                                                                        <input id="ex1num4" type="number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">Enter number:</div>
+                                                                    <div class="col-md-3">
+                                                                        <input id="ex1num5" type="number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <button id="btnEx1" class="btn btn-success btn-md">View Results</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6" id="ex1answer">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p id="reveal1"></p>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <p id="ex1output1"></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p id="reveal2"></p>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <p id="ex1output2"></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p id="reveal3"></p>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <p id="ex1output3"></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p id="reveal4"></p>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <p id="ex1output4"></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p id="reveal5"></p>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <p id="ex1output5"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#ex1collapse2">
+                                                        Have a look at the code behind the math
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex1collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <pre class="brush: js" id="scroll1">
+                                                        $('#ex1num1, ex1num2, ex1num3, ex1num4, ex1num5').on('keypress', function (event) {
+                                                            var x = event.charCode || event.which;
+                                                            if (x >= 97 && x <= 122)
+                                                                return false;
+                                                        });
+                                                        $("#btnEx1").click(function () {
+                                                            //Step 1: Collect the data
+                                                            var num1 = +($("#ex1num1").val());
+                                                            var num2 = +($("#ex1num2").val());
+                                                            var num3 = +($("#ex1num3").val());
+                                                            var num4 = +($("#ex1num4").val());
+                                                            var num5 = +($("#ex1num5").val());
+
+                                                            //Step 2: Do the math
+                                                            var Smallest = Math.min(num1, num2, num3, num4, num5);
+                                                            var Largest = Math.max(num1, num2, num3, num4, num5);
+                                                            var Sum = (num1 + num2 + num3 + num4 + num5);
+                                                            var Mean = Sum / 5;
+                                                            var Product = (num1 * num2 * num3 * num4 * num5);
+
+                                                            //Step 3: Output the results
+                                                            $("#reveal1").text("Smallest:");
+                                                            $("#reveal2").text("Largest:");
+                                                            $("#reveal3").text("Sum:");
+                                                            $("#reveal4").text("Mean:");
+                                                            $("#reveal5").text("Product:");
+
+                                                            $("#ex1output1").text(Smallest);
+                                                            $("#ex1output2").text(Largest);
+                                                            $("#ex1output3").text(Sum);
+                                                            $("#ex1output4").text(Mean);
+                                                            $("#ex1output5").text(Product);
+
+                                                        })
+                                                     </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ex2" class="tab-pane fade">
+                                <!-- Exercise 2 -->
+                                <div class="exercise2">
+                                    <div class="panel-group" id="accordion2">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#ex2collapse1">
+                                                        Let's calculate a factorial!
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex2collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="container">
+                                                        <div class="col-md-7">
+                                                            <div class="row">
+                                                                <div class="col-md-3">Enter a number:</div>
+                                                                <div class="col-md-3">
+                                                                    <input id="ex2num1" type="number" min="1" max="170" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <button id="btnEx2" class="btn btn-success btn-md">View Result</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5" id="ex2answer">
+                                                            <p id="ex2output1"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#ex2collapse2">
+                                                        Let's have a look at that code
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex2collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <pre class="brush: js" id="scroll2">
+                                                        $('#ex2num1').on('keypress', function (event) {
+                                                            var x = event.keyCode || event.which;
+                                                            if (x < 48 || x > 57)
+                                                                return false;
+                                                        });
+                                                        $("#btnEx2").click(function () {
+                                                            //Step 1: Get number
+                                                            var fact = Number($("#ex2num1").val());
+                                                            var result = 1;
+                                                            //Step 2: Write a loop
+                                                            for (var loop = fact; loop > 0; loop--) {
+                                                                result = result * loop;
+                                                            }
+                                                            //Step 3: Output results
+                                                            $("#ex2output1").html(fact + "<span id='padding'>!: </span>" + result);
+                                                        })                      
+                                                     </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ex3" class="tab-pane fade">
+                                <!-- Exercise 3 -->
+                                <div class="exercise3">
+                                    <div class="panel-group" id="accordion3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion3" href="#ex3collapse1">
+                                                        Fizz, Buzz or FizzBuzz?? to demonstrate the modulus operator
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex3collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="container">
+                                                        <div class="col-md-5">
+                                                            <div class="row">
+                                                                <div class="col-md-4">Enter a number:</div>
+                                                                <div class="col-md-3">
+                                                                    <input type="number" id="ex3input1" min="1" max="100" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">Enter a number:</div>
+                                                                <div class="col-md-3">
+                                                                    <input type="number" id="ex3input2" min="1" max="100" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <button id="btnEx3" class="btn btn-success btn-md">View Result</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="row">
+                                                                <div class="col-md-7" id="ex3answer">
+                                                                    <p id="ex3output1"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion3" href="#ex3collapse2">
+                                                        How does it even work?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex3collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <pre class="brush: js" id="scroll3">
+                                                        $('#ex3input1, #ex3input2').on('keypress', function (event) {
+                                                            var x = event.keyCode || event.which;
+                                                            if (x < 48 || x > 57)
+                                                                return false;
+                                                        });
+                                                        $("#btnEx3").click(function () {
+                                                            var result = [];
+                                                            //Step 1: Get the user input
+                                                            var input1 = +($("#ex3input1").val());
+                                                            var input2 = +($("#ex3input2").val());
+
+                                                            //Step 2: Write a loop
+                                                            for (var loop = 1; loop <= 100; loop++) {
+
+                                                                if (loop % input1 == 0 && loop % input2 == 0)
+                                                                    result.push("<span id='FizzBuzz'>FizzBuzz</span>");
+                                                                else if (loop % input1 == 0)
+                                                                    result.push("<span id='Fizz'>Fizz</span>");
+                                                                else if (loop % input2 == 0)
+                                                                    result.push("<span id='Buzz'>Buzz</span>");
+                                                                else
+                                                                    result.push(loop);
+                                                            }
+
+                                                            //Step 3: Write out Fizz Buzz string
+                                                            $("#ex3output1").html(result.join(", "));
+                                                        })
+                                                     </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ex4" class="tab-pane fade">
+                                <!-- Exercise 4 -->
+                                <div class="exercise4">
+                                    <div class="panel-group" id="accordion4">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion4" href="#ex4collapse1">
+                                                        Is it a palindrome?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex4collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="container">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-5">Enter a word or phrase:</div>
+                                                                <div class="col-md-5">
+                                                                    <input type="text" id="ex4input1" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <button id="btnEx4" class="btn btn-success btn-md">View Result</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3" id="ex4answer">
+                                                            <p id="ex4output1"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion4" href="#ex4collapse2">
+                                                        The magic behind the curtain
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="ex4collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <pre class="brush: js" id="scroll4">
+                                                        $('#ex4input1').on('keypress', function (event) {
+                                                            var x = event.keyCode || event.which;
+                                                            if (x >= 48 && x <= 57)
+                                                                return false;
+                                                        });
+                                                        $("#btnEx4").click(function () {
+                                                            //Step 1: Get word or phrase
+                                                            var word = $("#ex4input1").val();
+                                                            //Step 2: Remove any extraneous characters
+                                                            var lower = word.toLowerCase();
+                                                            var nospace = lower.replace(/\s+/g, '');
+                                                            var nochar = nospace.replace(/[^a-zA-Z ]/g, "")
+                                                            //Step 3: Reverse word
+                                                            var revword = nochar.split("").reverse().join("");
+                                                            //Step 4: Check to see if palindrome
+                                                            var result = word + " is not a palindrome";
+                                                            if (nochar == revword) {
+                                                                result = word + " is a palindrome";
+                                                            }
+                                                            //Step 5: Output results
+                                                            $("#ex4output1").html(result);
+                                                        });
+                                                     </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="ex1btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+        <!-- home wrapper -->
+        <div class="home-wrapper">
+            <div class="container">
+                <div class="row">
+                    <!-- home content -->
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="home-content" id="me">
+                            <h1 class="white-text" id="myname">Nicole Iman</h1>
+                            <p class="white-text" id="myblurb">
+                                Software Developer
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /home content -->
+                </div>
+            </div>
+        </div>
+        <!-- /home wrapper -->
+    </header>
+    <!-- /Header -->
+    <!-- About -->
+    @*<div id="about" class="section md-padding">
+            <!-- Container -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <!-- Section header -->
+                    <div class="section-header text-center">
+                        <h2 class="title">Welcome to Website</h2>
+                    </div>
+                    <!-- /Section header -->
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-cogs"></i>
+                            <h3>Fully Customizible</h3>
+                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-magic"></i>
+                            <h3>Awesome Features</h3>
+                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-mobile"></i>
+                            <h3>Fully Responsive</h3>
+                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+        </div>*@
+    <!-- /About -->
+    <!-- Portfolio -->
+    <div id="portfolio" class="section md-padding bg-grey">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Featured Work</h2>
+                </div>
+                <!-- /Section header -->
+                <!-- Work -->
+                <div class="col-md-4 col-xs-6 work">
+                    <img class="img-responsive" src="~/creativeagency/img/blog.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="work-content">
+                        <h3>Blog</h3>
+                        <div class="work-link">
+                            <a href="https://ndiblog.azurewebsites.net/" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Work -->
+                <!-- Work -->
+                <div class="col-md-4 col-xs-6 work">
+                    <img class="img-responsive" src="~/creativeagency/img/Bug-Tracker-2.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="work-content">
+                        <h3>Bug Tracker</h3>
+                        <div class="work-link">
+                            <a href="https://ndibugtracker.azurewebsites.net" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Work -->
+                <!-- Work -->
+                <div class="col-md-4 col-xs-6 work">
+                    <img class="img-responsive" src="~/creativeagency/img/fiancialplanner.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="work-content">
+                        <h3>Financial Planner</h3>
+                        <span>Coming Soon!</span>
+                        @*<div class="work-link">
+                            <a href="http://ndifinancialplanner.azurewebsites.net/" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>*@
+                    </div>
+                </div>
+                <!-- /Work -->
+                
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Portfolio -->
+    <!-- Why Choose Us -->
+    <div id="about" class="section md-padding bg-grey">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- why choose us content -->
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h2 class="title">About me</h2>
+                    </div>
+                    <p></p>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>
+                            My name is Nicole Iman and I am a highly motivated, hard working individual and am currently taking a bootcamp at Coder Foundry to learn .NET development.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>
+                            I have been with Harris Teeter for 6 years. I began my career in customer service and through hard work advanced to the Store Accountant.
+                            However, my passion lies in development and I am ready to transition fully to a full stack coder.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>
+                            I also have a background in French with a Bachelor's degree to prove it and plenty of stories from a semester abroad in Angers.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>
+                            <a href="@Url.Content("~/Resume/Resume.pdf")" target="_blank">View My Resume</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /why choose us content -->
+                <!-- About slider -->
+                <div class="col-md-6">
+                    @*<div id="about-slider" class="owl-carousel owl-theme">*@
+                    <img class="img-responsive" src="~/creativeagency/img/Nicole-Iman2.jpg" alt="">
+                    @*<img class="img-responsive" src="~/creativeagency/img/about2.jpg" alt="">
+                        <img class="img-responsive" src="~/creativeagency/img/about1.jpg" alt="">
+                        <img class="img-responsive" src="~/creativeagency/img/about2.jpg" alt="">*@
+                    @*</div>*@
+                </div>
+                <!-- /About slider -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Why Choose Us -->
+    <!-- Blog -->
+    @*<div id="blog" class="section md-padding bg-grey">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Recents news</h2>
+                </div>
+                <!-- /Section header -->
+                <!-- blog -->
+                <div class="col-md-4">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img class="img-responsive" src="~/creativeagency/img/blog1.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i>John doe</li>
+                                <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                                <li><i class="fa fa-comments"></i>57</li>
+                            </ul>
+                            <h3>Molestie at elementum eu facilisis sed odio</h3>
+                            <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                            <a href="~/creativeagency/blog-single.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /blog -->
+                <!-- blog -->
+                <div class="col-md-4">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img class="img-responsive" src="~/creativeagency/img/blog2.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i>John doe</li>
+                                <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                                <li><i class="fa fa-comments"></i>57</li>
+                            </ul>
+                            <h3>Molestie at elementum eu facilisis sed odio</h3>
+                            <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                            <a href="~/creativeagency/blog-single.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /blog -->
+                <!-- blog -->
+                <div class="col-md-4">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img class="img-responsive" src="~/creativeagency/img/blog3.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i>John doe</li>
+                                <li><i class="fa fa-clock-o"></i>18 Oct</li>
+                                <li><i class="fa fa-comments"></i>57</li>
+                            </ul>
+                            <h3>Molestie at elementum eu facilisis sed odio</h3>
+                            <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                            <a href="~/creativeagency/blog-single.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /blog -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>*@
+    <!-- /Blog -->
+    <!-- Contact -->
+    <div id="contact" class="section md-padding">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Section-header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Get in touch</h2>
+                </div>
+                <!-- /Section-header -->
+                <!-- contact -->
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <i class="fa fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>336-392-5852</p>
+                    </div>
+                </div>
+                <!-- /contact -->
+                <!-- contact -->
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>nicole.iman537@gmail.com</p>
+                    </div>
+                </div>
+                <!-- /contact -->
+                <!-- contact -->
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h3>Address</h3>
+                        <p>1002 McDowell Dr</p>
+                    </div>
+                </div>
+                <!-- /contact -->
+                <!-- contact form -->
+                @*<div class="col-md-8 col-md-offset-2">
+                    <form class="contact-form">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Subject">
+                        <textarea class="input" placeholder="Message"></textarea>
+                        <button class="main-btn">Send message</button>
+                    </form>
+                </div>*@
+                <!-- /contact form -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Contact -->
+    <!-- Footer -->
+    <footer id="footer" class="sm-padding bg-dark">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- footer logo -->
+                    @*<div class="footer-logo">
+                            <a href="~/creativeagency/index.html"><img src="~/creativeagency/img/logo-alt.png" alt="logo"></a>
+                        </div>*@
+                    <!-- /footer logo -->
+                    <!-- footer follow -->
+                    <ul class="footer-follow">
+                            @*<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>*@
+                            @*<li><a href="@Url.Content("~/Resume/Nicole_Iman_Resume.pdf")" target="_blank">Resume</a></li>*@
+                            <li><a href="https://www.linkedin.com/in/nicole-iman-174696111/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    <!-- /footer follow -->
+                    <!-- footer copyright -->
+                    <div class="footer-copyright">
+                        <p>© 2018 Nicole Iman</p>
+                    </div>
+                    <!-- /footer copyright -->
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </footer>
+    <!-- /Footer -->
+    <!-- Back to top -->
+    <div id="back-to-top"></div>
+    <!-- /Back to top -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- /Preloader -->
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="~/creativeagency/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/creativeagency/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/creativeagency/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/creativeagency/js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="~/creativeagency/js/main.js"></script>
+
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script src="~/Scripts/Portfolio.js"></script>
+
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+</body>
+</html>
